@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+        body{
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+
+            /*Medidas Absolutas
+            cm, mm, in, px, pt, pc
+
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+
+            16px geralmente = 1em
+            */
+            font-size: 1em;
+        }
+        h1 {
+            /*shorthand font
+            font-style -> font-weight -> font-size -> font-family
+            
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            */
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+        h2 {
+            font: bolder 2em 'Work Sans', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, perspiciatis dolorum qui tempora temporibus itaque! Tempore iure fuga perspiciatis, ipsam ea, voluptatem dolore tempora, quibusdam officia ad animi nisi quas.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis dolor, enim quis aperiam beatae, eos dicta deleniti dolorum quaerat amet cupiditate veniam unde dolores quos eum sint pariatur non delectus!</p>
+
+    <h1>Alinhamento de textos usando CSS</h1>
+    <p style="text-align: left;">Este primeiro parágrafo terá o alinhamento padrão, à esquerda.</p>
+    <p style="text-align: right;">O segundo parágrafo ficará alinhado à direita.</p>
+    <p style="text-align: center;">O terceiro parágrafo terá alinhamento centralizado.</p>
+    <p style="text-align: justify;">O último parágrafo terá o alinhamento justificado. Para que você perceba isso, terei que colocar um texto um pouco maior. Caso você não perceba que o alinhamento está sendo feito nas duas laterais, tente diminuir um pouco o tamanho do seu navegador. Esse tipo de alinhamento é bastante utilizado para textos longos e grandes parágrafos, para dar uma sensação de simetria. Agora eu já não sei mais o que escrever, mas vou continuar para que seu texto fique grande o suficiente para que você possa ver o alinhamento justificado. Nunca pensei que seria tão difícil ficar escrevendo coisas sem sentido só pra que uma explicação faça um sentido mínimo. Já chega, pra mim já deu! Espero que você tenha conseguido entender. </p>
+</body>
+</html>
